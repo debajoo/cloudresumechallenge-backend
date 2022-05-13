@@ -8,5 +8,5 @@ s3_prefix = "test-sam-app-2"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
-disable_rollback = true
+disable_rollback = false
 image_repositories = []
