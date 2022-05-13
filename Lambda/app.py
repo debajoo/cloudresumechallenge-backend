@@ -21,7 +21,7 @@ def lambda_handler(event, context):
     )
 
     # Format dynamodb response into variable
-    responseBody = json.dumps(int(float(ddbResponse["Attributes"]["visitor_count"])))
+    responseBody = json.dumps({"count":int(float(ddbResponse["Attributes"]["visitor_count"]))})
     # Create api response object
     apiResponse = {
         "isBase64Encoded": False,
